@@ -1,0 +1,50 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: gold;
+}
+
+.box-div {
+    max-width: 1100px;
+    margin: 5% auto;
+    display: flex;
+}
+
+.box-div div {
+    flex: 1 1 200px;
+    background-color: #2a2a2a;
+    border-radius: 20px;
+    padding: 10px;
+    color: white;
+    margin: 0 10px;
+    transition: .8s;
+}
+
+.box-div div:hover {
+    background-color: dodgerblue;
+}
+
+h1 {
+    text-align: center;
+    color: #2a2a2a;
+    font-size: 3em;
+}
+
+h2 {
+    color: gold;
+    text-align: center;
+}
+
+ul {
+    background-color: #80808046;
+    padding: 5px;
+    border-radius: 30px;
+    list-style-type: none;
+    padding: 10px;
+}
+
+ul>li {
+    line-height: 1.7em;
+}
