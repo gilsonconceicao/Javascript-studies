@@ -1,0 +1,7 @@
+- Aqui estou praticado o DOM (Document Object Model). 
+
+-- Criando variáveis e executando o DOM, de maneira pelo nome, pelo id, pelas classes, selector...
+
+- os exercícios será uma pagina com CSS e ir fazendo alterações em elementos por elementos com o JS. 
+
+- Vamos que vamos!! 

@@ -1,0 +1,5 @@
+- As funções são basicamente são um conjunto de códigos que será executado quando 
+o evento ocorrer. 
+
+- Com um comando para não poluir muito o código 
+em HTML, .addEventLister('função', nome da função).

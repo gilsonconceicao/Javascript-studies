@@ -1,0 +1,38 @@
+@charset "UTF-8"; 
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+header h1 {
+    font-size: 3em;
+    padding-left: 40px;
+    border-bottom: 2px solid black; 
+}
+
+body {
+    background-color: azure;
+}
+
+#botao-soma {
+    background-color: #2a2a2a;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 20px;
+    transition: .8s;
+}
+#botao-soma#botao-soma:hover {
+    transform: scale(0.9);
+}
+
+
+/* input para somar */  
+#textN1, #textN2 {
+    width: 80px;
+    text-align: center;
+}
+
+/* input para multiplicar */ 
+#input_vezesN1, #input_vezesN2 {
+    width: 80px;
+    text-align: center;
+}

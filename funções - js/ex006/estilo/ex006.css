@@ -1,0 +1,95 @@
+@charset "UTF-8"; 
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+/* cabeçalho da pagina */ 
+
+header {
+    background-color: #2a2a2a;
+    padding: 2% 0;
+}
+
+header h1 {
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+}
+
+body {
+    background-color: #00ce75d4;
+}
+
+/* calculadora js */ 
+
+article#calculadorajs {
+    max-width: 300px;
+    margin: 3% auto;
+    padding: 0 20px;
+}
+
+ h2 {
+    font-size: 3em;
+    margin: 3% 0;
+    text-align: center;
+}
+#adicaoN1, #adicaoN2, #subtrairN1, #subtrairN2, #vezesN1, #vezesN2 {
+    width: 75px;
+    text-align: center;
+    padding: 2;
+    margin: 10px 0;
+    border: 2px solid #3f3f3fb6;
+    border-radius: 3px;
+    outline: none;
+}
+
+.botoes_c {
+    background-color: #2a2a2a;
+    border: none;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 40px;
+    transition: .8s;
+}
+
+.botoes_c:hover {
+    transform: scale(0.8);
+}
+
+/* interações com js // blocos */ 
+
+div#conteiner_div {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: auto auto 100px auto;
+    align-items: center;
+}
+
+div#conteiner_div div {
+    background-color: teal;
+    color: white;
+    text-align: center;
+    line-height: 200px;
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+    transition: .9s;
+}
+
+
+@media screen and (max-width: 800px) {
+    h2 {
+        font-size: 2em;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    div#conteiner_div div {
+        margin: 20px auto 20px auto;
+        padding: 0 30px;
+    }
+}
