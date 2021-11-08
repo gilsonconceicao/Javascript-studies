@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Limite de votos </title>
+</head>
+<body>
+    <header>
+        <h1>Limite para votar </h1>
+    </header>
+
+    <main>
+        <article>
+            <ul>
+                <li>Menor de 16 anos <strong>não podem votar</strong></li>
+                <li><strong>Entre</strong> 16 e 18 anos e acima de 65, votos opcionais.</li>
+                <li>As demais idades será obrigatório.</li>
+            </ul>
+        </article>
+
+        <article>
+            <h2>Veja se você pode votar: </h2>
+
+            <label for="idade">Qual a sua idade</label> <br>
+            <input type="number" name="input_idade" id="input_idade">
+            <input type="button" value="Verificar" onclick="cliacar_idade()">
+
+            <p id="res"> Resposta: </p>
+        </article>
+    </main>
+
+    <script src="script/votar01.js"></script>
+</body>
+</html>

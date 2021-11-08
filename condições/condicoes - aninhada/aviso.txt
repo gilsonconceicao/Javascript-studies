@@ -1,0 +1,9 @@
+Condições aninhadas são aquelas que possuem mais de um if no seu código. 
+
+Estrutura: 
+
+        if (condição) {
+            ----------------------
+        } else if (condição02) {
+            -----------
+        }

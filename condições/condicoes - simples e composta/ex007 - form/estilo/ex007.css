@@ -1,0 +1,55 @@
+@charset "UTF-8"; 
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+/* cabeçalho da pagina */
+
+header {
+    background-color: #2a2a2a;
+    padding: 3% 0 ;
+}
+
+header h1, p {
+    color: white;
+    text-align: center;
+}
+
+header h1 {
+    text-decoration: 1px underline #f5f5f5;
+}
+
+/* body da pagina - form */
+
+body {
+    background-image: linear-gradient(to left, dodgerblue, #0c5cac);
+}
+
+div#area_form {
+    background-color: white;
+    border-radius: 30px ;
+    max-width: 400px;
+    margin: 5% auto;
+    padding: 20px 10px;
+}
+
+label {
+    font-size: 23px;
+    text-align: center;
+    margin: 0 20px ;
+}
+
+input {
+    width: 90%;
+    padding: 3px 2px;
+    margin: 20px;
+}
+
+input#button_form {
+    background-color: dodgerblue;
+    border: none;
+    padding: 5px 0;
+}

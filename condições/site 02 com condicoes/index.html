@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temas | horário</title>
+    <link rel="stylesheet" href="estilo/tema.css">
+</head>
+<body id="corpo">
+
+    <main id="principal">
+        <h2>Temas</h2>
+        <p id="res_horario">Escolha um horário desejado!</p>
+        <div id="img_page">
+            <img src="imagens/configuracao.png" alt="configuracao png" id="img_page"> 
+        </div>
+
+
+        <div class="box_flex">
+            <div>
+                <ul>
+                    <li>5 às 12 - Manhã.</li>
+                    <li>13 às 17 - Tarde.</li>
+                    <li>18 às 4 - Noite/madrugada</li>
+                </ul>
+            </div>
+            
+            <div class="area_input">
+                <label for="esclha">Esolha um horário</label> <br>
+                <input type="number" name="number" id="input_number">
+                <input type="button" value="Alterar" id="button" onclick="clicar_hora()">
+            </div>
+        </div>
+    </main>
+
+    <script src="script/tema.js"></script>
+</body>
+</html>

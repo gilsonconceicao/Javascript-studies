@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detran e naionalidades</title>
+    <link rel="stylesheet" href="estilo/ex003.css">
+</head>
+<body>
+    <header>
+        <h1>CONDIÇÕES EM JS</h1>
+    </header>
+
+    <main>
+        <article id="detran">
+            <h2>Detran</h2>
+            <p><strong>Sistema de multas</strong></p>
+            Qual a sua velocidade (Km/h): <input type="number" name="textvel" id="textvel">
+            <input type="button" value="Calcular" onclick="calcular_vel()">
+            <p id="res">Detalhes: </p>
+        </article>
+
+        <article id="nacionalidades">
+            <h2>Nacionalidades</h2>
+            <p>Digite seu pais e veja a sua nacionalidade. </p>
+
+            Qual país você nasceu: <input type="text" name="text_naciona" id="text_naciona">
+            <input type="button" value="Verificar" onclick="verificar()">
+            <p id="res_naciona">Nacionalidade:</p>
+        </article>  
+    </main>
+
+    <script src="script/ex003.js"></script>
+</body>
+</html>

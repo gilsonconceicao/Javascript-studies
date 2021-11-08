@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votar | 02</title>
+</head>
+<body>
+    <!--exercício 02 no navegador sistema de votação-->
+    <header>
+        <h1>Limite de votação</h1> 
+    </header>
+
+    <main>
+        <article>
+            <h2>Veja se você pode ou não votar</h2>
+            <ul>
+                <li><strong>Menor</strong> de 16 - Não pode. </li>
+                <li><strong>Entre</strong>16 e 18 e acima de 65 - Votos opcional. </li>
+                <li><strong>As demais</strong> - votos obrigatório.</li>
+            </ul>
+        </article>
+
+        <article>
+            <label for="votos">Qual a sua idade</label> <br>
+            <input type="number" name="idade_input" id="idade_input">
+            <input type="button" value="Checar" onclick="clicar_votos()">
+
+            <p id="res">Resposta</p>
+        </article>
+    </main>
+
+    <script src="sript/votar02.js"></script>
+</body>
+</html>
