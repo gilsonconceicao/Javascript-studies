@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object em javascript </title>
+</head>
+<body>
+    <h1>Estudando object em javascript</h1>
+</body>
+
+<script> // código para estudo de object 01 
+
+var usuario = {
+    nome: 'Junior', 
+    idade: 16
+}
+
+console.log(usuario); 
+console.log(usuario.nome); 
+console.log(usuario.idade);
+
+usuario.ano = new Date().getFullYear(); 
+
+delete usuario.ano; // excluído 
+
+
+usuario.hobbies = ['Estudar', 'programar', 'jogar']; 
+
+console.log(usuario);
+console.log(usuario.hobbies[0]); 
+
+usuario.competencias = {
+    linguagem: ['javascript', 'PHP', 'Go', 'SQL'], 
+    esportes: ['futebol', 'volei', 'basquete']
+}
+
+console.log(usuario);
+
+// function Object 
+
+var usuario02 = {
+    digaOi: function(name) {
+        return `Olá, ${name}`;  
+    } 
+}
+console.log(usuario02.digaOi('Junior')); 
+
+// acesso por variáveis 
+
+var nome = 'Junior'; 
+var idade = 16; 
+
+var usuario03 = {
+    nome, 
+    idade
+} 
+console.log(usuario03);
+
+// juntar objects 
+
+var a = {
+    nomes: ['Junior', 'Santos', 'Ana', 'Cristina']
+}
+
+var b = {
+    princípios: ['Saúde', 'paz', 'felicidades']
+}
+
+var juntos = Object.assign({}, a, b); 
+
+console.log(juntos)
+
+// spread 
+
+var juntar02 = {
+    ...usuario, 
+    ...usuario02
+}
+
+console.log(juntar02)
+
+// gettters e setters 
+
+var usuarios = [
+    {
+        nome: 'Junior', 
+        idade: 16
+    },
+    {
+        nome: 'Santos', 
+        idade: 19
+    },
+    {
+        nome: 'Conceição', 
+        idade: 25
+    }
+];
+
+console.log(usuarios); 
+
+var usuario = {
+    posicao: 0, 
+    get atual() {
+        return usuarios[this.posicao]
+    },
+    set atual(posicao) {
+        this.posicao = posicao
+    },
+    proximo() {
+        ++this.posicao;
+    }, 
+    anterior() {
+        --this.posicao; 
+    }
+}
+
+usuario.proximo();
+console.log(usuario.atual); //Junior idade:16
+
+usuario.proximo();
+console.log(usuario.atual);//'Santos idade:19
+
+usuario.proximo();
+console.log(usuario.atual);//Conceição idade:25
+ 
+
+usuario.anterior(); //'Santos idade:19
+console.log(usuario.atual); 
+
+usuario.atual = 0; 
+console.log(usuario.atual); //Junior idade:16
+
+usuario.atual = 1; 
+console.log(usuario.atual) //Conceição idade:25
+</script>
+
+</html>

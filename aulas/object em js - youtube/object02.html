@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando object`s + function`s</title>
+</head>
+<body>
+    <header>
+        <h1>Praticando object + função </h1>
+    </header>
+</body>
+
+<script>
+
+function nome (name) {
+    return ` Olá, ${name}!`; 
+}
+console.log(nome('Junior'))
+
+/*----- this
+    - uma palavra que depende onde usa pode ter valores diferentes. Sempre retorna um objeto. 
+*/ 
+
+function funNew(pessoa01) {
+    console.log('Primeira pessoa', this);
+    console.log(pessoa01)
+}
+
+var obj01 = {
+    nome:'JuniorSantos'
+}
+
+/*----- new 
+    - Cria uma instância de um tipo de objeto. New antes de uma função com o this, o this passa a não ter valor padrão */
+
+console.log(new funNew('Idade')); 
+
+
+// ---- metódo call
+/*altera o valor de this com os acessos
+*/
+
+function funCall(pr1, pr2, pr3) {
+    console.log('programadores', this ); 
+    console.log(pr1); 
+    console.log(pr2); 
+    console.log(pr3); 
+}
+
+var objs01 = {
+    melhores: 'todos citados'
+}
+
+funCall.call(obj01, 'Stave Jobs', 'Mark', 'Tim Berners Lee');
+
+// ------ applay
+
+function esporte(nameEsporte) {
+    console.log('Esportes', this); 
+    console.log(nameEsporte); 
+}
+
+var objs22 = {
+    players: 'Cristiano'
+}
+
+esporte.apply(objs22, ['Futebol']);
+
+// bind 
+
+function pessoas(p1) {
+    console.log('Nome de pessoas', this);
+    console.log(p1);  
+}
+
+var objs03 = {
+    sobre: 'sem sobrenome'
+}
+
+var pessoasMostrar = pessoas.bind(objs03, 'Ana'); 
+pessoasMostrar(); 
+
+</script>
+
+</html>
