@@ -1,0 +1,126 @@
+@charset "UTF-8"; 
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+/* ------ header da pagina --------- */
+
+header {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+header h2 {
+    color: #f0eeeec4;
+    padding: 25px;
+}
+
+
+
+/* conteiner box da pagina */ 
+
+.conteiner_box {
+    display: grid;
+    grid-template-columns: 300px auto;
+}
+
+.area_entrar {
+    background-color: #710ab6;
+    color: white;
+    height: 100vh;
+}
+
+.area_entrar h2 {
+    padding: 10px;
+}
+
+/* sobre a pagina */ 
+
+.sobre_page {
+    max-width: 850px;
+    text-align: justify;
+    height: 100vh;
+}
+#text_sobre {
+    padding: 30px;
+    margin: 150px 0;
+}
+
+.sobre_page h3 {
+    color: #710ab6;
+    font-size: 1.7em;
+    margin-bottom: 10px;
+}
+
+.sobre_page p {
+    font-size: 20px;
+    line-height: 1.3em;
+}
+
+/* ------ icones do site para redes sociais pessoal ------- */ 
+
+#icons_sites {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+#icons_sites a {
+    display: block;
+    align-items: center;
+    border-radius: 30%;
+    margin: 0 10px;
+    padding: 10px;
+    transition: all .8s;
+}
+
+#icons_sites a:hover {
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+
+/* --- formulário --- */ 
+
+#area_form {
+    margin: 50% 0 20% 0;
+    padding: 10px;
+}
+
+label {
+    font-size: 20px;
+}
+
+#text_nome {
+    background-color: #f0eeee;
+    color: black;
+    outline: none;
+    border-radius: 4px;
+    padding: 2px;
+    width: 97%;
+    margin: 10px 0 ;
+}
+
+.button_entrar {
+    background-color: #313131;
+    display: block;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 18px;
+    padding: 2px;
+
+}
+
+.button_entrar a {
+    color: white;
+}
+

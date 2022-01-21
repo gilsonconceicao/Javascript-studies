@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste select </title>
+    <link rel="stylesheet" href="style/formulario.css">
+</head>
+
+<body>
+    <header>
+        <h1>FORMULÁRIO - JOGADORES</h1>
+    </header>
+
+    <main>
+
+        <div id="area_form">
+            <h3>Preencha os dados</h3>
+            <form action="#" >
+                <!---nome--->
+                <div>
+                    <label for="nome">Qual é o seu nome? </label>
+                    <input type="text" name="nameP" id="nome_pessoa"><br>
+                </div>
+                <!---generos--->
+                <div>
+                    <label for="genero">Qual o seu gênero? </label> <br>
+                    <input type="radio" name="genero" id="fem">
+                    <label for="fem">feminino</label> <br>
+                    <input type="radio" name="genero" id="masc">
+                    <label for="masc">masculino</label> <br>
+                    <input type="radio" name="genero" id="lgbt">
+                    <label for="lgbt">LGBTQI+</label> <br>
+                    <input type="radio" name="genero" id="naodizer">
+                    <label for="naodizer">prefiro não dizer</label> <br>
+                </div>
+                <!---jogadores--->
+                <div>
+                    <label for="jogadores">Jogador favorito: </label> <br>
+     
+                    <input type="radio" name="players" id="fem">
+                    <label for="fem">C. Ronaldo</label> <br>
+                    <input type="radio" name="players" id="masc">
+                    <label for="masc">L. Messi</label> <br>
+                    <input type="radio" name="players" id="lgbt">
+                    <label for="lgbt">Neymar Jr</label> <br>
+                    <input type="radio" name="players" id="naodizer">
+                    <label for="naodizer">R. Lewandoviski</label> <br>
+                    </select>
+                    <br>
+                    <br>
+                    <input type="button" class="btn_form" value="verificar" onclick="verificar_form()">
+                </div>
+
+                <div id="resposta">
+
+                </div>
+            </form>
+        </div>
+    </main>
+
+</body>
+<script src="script/testeSelect.js"></script>
+</html>

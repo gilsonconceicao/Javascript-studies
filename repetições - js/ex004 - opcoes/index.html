@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repetições de valores</title>
+    <link rel="stylesheet" href="style/ex004.css">
+</head>
+<body>
+    <header>
+        <h1>Repetições com JavaScript</h1>
+    </header>
+    <main>
+        <article id="assunto">
+            <h2>Contagem de números</h2>
+            <p>Clique nos botões para contar nos seus respectivos valores.</p>
+        </article>
+        <article id="conteiner_opcoes">
+            <h3>Opições de contagem</h3>
+            <div class="flex_opcoes">
+                <div id="opcoes">
+                    <input type="radio" name="contagem" id="zeroadez">
+                    <label for="zeroadez">0 a 10</label> <br>
+                    <input type="radio" name="contagem" id="zeroavinte">
+                    <label for="zeroadez">0 a 20 </label> <br>
+                    <input type="radio" name="contagem" id="zeroatrinta">
+                    <label for="zeroadez">0 a 30 </label> <br>
+                    <input type="radio" name="contagem" id="quarenta">
+                    <label for="zeroadez">0 a 40 </label> <br> <br>
+                    <input type="button" id="button" value="contar" onclick="contagem()">
+                </div>
+                <div id="respostas">
+                    <p id="res">Resposta: </p>
+                   
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <script src="script/contagem.js"></script>
+</body>
+</html>

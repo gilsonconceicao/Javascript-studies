@@ -1,0 +1,72 @@
+@charset "UTF-8"; 
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+/* header - cabeçalho da pagina */ 
+
+header {
+    text-decoration: 2px underline #3f3f3f;
+    text-align: center;
+    padding: 10px 0 ;
+}
+
+/* formulário da pagina */ 
+
+div#area_form {
+    background-color: #bbbbbb;
+    border-radius: 20px;
+    max-width: 300px;
+    padding: 20px;
+    margin: auto;
+}
+
+div#area_form form {
+    background-color: #dfdfdf;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+div#area_form div {
+    margin: 10px 0;
+}
+
+div#area_form h3 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* --- input e label --- */ 
+
+div#area_form input {
+    margin: 2px 0;
+    outline: none;
+}
+
+div#area_form label {
+    font-size: 18px;
+}
+
+/* ----- area form ---- */ 
+
+.btn_form {
+    background-color: #666666; 
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 17px;
+    letter-spacing: 1.2px;
+    border-radius: 20px;
+    width: 100%;
+    padding: 2px; 
+    transition: all .9s;
+}
+
+.btn_form:hover {
+    background-color: #353535;
+}

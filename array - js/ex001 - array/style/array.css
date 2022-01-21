@@ -1,0 +1,109 @@
+@charset "UTF-8"; 
+
+
+* {
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+/* --- cabeçalho  ---*/
+
+header {
+    background-color: #712091;
+    padding: 3% 20px;
+}
+
+header h1 {
+    color: white;
+    font-size: 3em;
+    padding-left: 20px;
+}
+
+
+/* main e articles */ 
+
+main {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 500px 500px;
+    grid-gap: 20px;
+    max-width: 1100px;
+    margin: 6% auto;
+}
+
+.sobre_array h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.sobre_array p {
+    font-size: 20px;
+}
+
+
+/* área de exercício */ 
+#exercício {
+    background-color: #7a7a7a18;
+    box-shadow: 0px 3px 7px #0000008e;
+    border-radius: 10px;
+    padding: 40px 20px;
+    transition: all .8s;
+}
+
+
+
+#txtN1, #txtN2, #txtN3 {
+    background: none;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    font-size: 18px;
+    border-bottom: 2px solid;
+    padding: 2px;
+}
+
+#exercício h3 {
+    text-align: center;
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+#dados_exercicio input {
+    margin: 5px auto;
+    display: block;
+}
+
+
+#btn_valor {
+    background: dodgerblue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 5px;
+    width: 200px;
+    transition: all .9s;
+}
+
+#btn_valor:hover {
+    border-radius: 50% 0;
+}
+
+
+#res {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+
+@media screen and (max-width: 1200px) {
+    main {
+        display: block;
+        padding: 0 20px;
+    }
+
+    article {
+        margin: 10px 0;
+    }
+}

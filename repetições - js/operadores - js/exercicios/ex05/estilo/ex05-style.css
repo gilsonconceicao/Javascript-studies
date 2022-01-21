@@ -1,0 +1,136 @@
+@charset "UTF-8"; 
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --cor-amarela: #ffbc42; 
+    --cor-vermelha: #8f2d56; 
+    --cor-azul: #1bbdd0;
+}
+/* menu da pagina */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(6, 18, 58);
+    padding: 10px;
+}
+
+#menu ul {
+    display: flex;
+    list-style-type: none;
+    padding-right: 30px;
+}
+
+#menu > ul > li > a {
+
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px 10px;
+    transition: .8s;
+}
+
+#menu > ul > li > a:hover {
+    background-color: var(--cor-azul);
+    border-radius: 30px;
+
+}
+
+div#logo {
+    width: 30px;
+    height: 30px;
+    background-color: #ff5;
+    border-radius: 100% ;
+    margin-left: 30px;
+}
+
+/* botão do menu  */ 
+h2.botao-menu {
+    color: white;
+    display: none;
+}
+
+/* conteúdo */ 
+h3 {
+    color: var(--cor-azul);
+    margin-bottom: 3px;
+}
+p {
+    line-height: 1.5em;
+}
+article {
+    background-image: linear-gradient(to left, var(--cor-vermelha), var(--cor-azul));
+    padding: 0 10px;
+}
+
+.article-justify {
+    max-width: 1200px;
+    margin: auto;
+    padding: 12% 0 ;
+}
+
+#div-box {
+    display: grid;
+    grid-template-columns: auto auto auto; 
+}
+
+div.box {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    margin: 10px;
+}
+
+/* detalhes  */ 
+details ul {
+    display: block;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+summary {
+    background-color: #00000038;
+    color: black;
+    padding: 2px 6px;
+    border-radius: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+}   
+
+
+/* responsividade da pagina */ 
+@media screen and (max-width: 600px) {
+    /* display grid para block */ 
+    #div-box {
+        display: block;
+    }
+
+    /* menu da pagina */ 
+   
+    #menu ul {
+        display: none;
+        background-color: rgb(6, 18, 58);
+        position: absolute;
+        top: 7%;
+        right: 0;
+        padding: 20px;
+        text-align: center;
+        border-radius: 20px;
+    }
+    #menu:hover > ul {
+        display: block;
+    }
+    #menu a {
+        line-height: 2em;
+    }
+    /* botão do menu  */ 
+    h2.botao-menu {
+        color: white;
+        display: block;
+        padding-right: 20px;
+}
+}

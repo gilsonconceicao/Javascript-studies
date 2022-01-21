@@ -1,0 +1,7 @@
+- Prática através de exercícios. Manipulando o código com array. 
+
+- Ultilizando comandos também, tipo: .sort()   .push()   .length   .indexOf()
+
+- Uma forma na qual estpu praticando
+é substituindo exercícios já feitos e adcionando 
+array.

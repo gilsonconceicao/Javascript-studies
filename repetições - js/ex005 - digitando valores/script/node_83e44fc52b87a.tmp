@@ -1,0 +1,19 @@
+
+// contagem de acordo com o digito 
+/*
+function contagem() {
+    // input:number
+    let n_digito = window.document.getElementById('n_digito').value; 
+    let res_digito = 0; 
+
+    // resposta
+    var res = window.document.getElementById('res'); 
+    */
+
+    for (let valor = 5 ; valor * 10 ; valor++) {
+        console.log(valor)
+    }
+    
+
+    // res.innerHTML = res_digito;  
+//}

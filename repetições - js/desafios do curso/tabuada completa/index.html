@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada completa</title>
+    <link rel="stylesheet" href="style/tabuada.css">
+</head>
+<body>
+    <header>
+        <h1>Tabuada completa</h1>
+        <p>tabuada com apenas um clique</p>
+    </header>
+    <main>
+        <section id="destaque">
+            <article>
+                <h2>Repetições</h2>
+                <p>A tabuada foi criada e desenvolvida através do <strong>javascript</strong> em um exercício prático. Com o objetivo de escolher um número e logo em seguida fazer a multiplicação daquele número digitado dez vezes. Assim como na vida real, existem as contas com qualaquer número. </p>
+            </article>
+        </section>
+        <section id="tabuada">
+            <div>
+                <!---dados --->
+                <h3>Tabuada</h3>
+                <div class="dados">
+                    <input type="number" placeholder="digite um número" name="num" id="txtN" > <br> 
+                    <input id="btn_tab" type="button" value="gerar tabuada" onclick="tabuada_completa()">
+                    <br>
+                    <select name="tab" id="selTab" size="10"></select>
+                </div>
+                <!---local da resposta--->
+            </div>
+        </section>
+    </main>
+</body>
+<script src="script/tabuada.js"></script>
+</html>
