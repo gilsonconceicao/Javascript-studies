@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This & Bind</title>
+    <link rel="stylesheet" href="style/bindThis.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"/>
+</head>
+<body>
+    <header>
+        <h1>This & Bind</h1>
+        <i class="fa-brands fa-js"></i>
+    </header>
+    <section class="aboutPage">
+        <article>
+            <h2>This</h2>
+            <p>This é uma palavra reservada que referencia a um objeto e seus valores podem variar de acordo com a forma na qual é chamada. </p>
+        </article>
+        <article>
+            <h2>Bind</h2>
+            <p>Bind é um metódo que se encaixa da melhor forma com o this. O bind tem a função d acessar o this em outro lugar do código e não apenas em um único objeto.</p>
+        </article>
+    </section>
+    <main>
+        <h2>Manipulando input com this e bind </h2>
+        <div class="area_Manipulacion">
+           <div>
+               <p>Retornando nome e email</p>
+               <form>
+                    <label for="nome">Nome: </label>
+                    <input type="text" size="30" name="name" id="nameUser"> <br>
+                    <label for="nome">Email: </label>
+                    <input type="email" size="30" name="email" id="nameEmail"> <br>
+                    <button class="btnPage" id="verificationDice">VERIFICAR</button>
+               </form>
+           </div>
+           <div id="area_answer">
+               <p id="res">...</p>
+           </div>
+        </div>
+        <!-- segunda manipulação -->
+        <div class="area_Manipulacion02">
+            <h2>Usando this e bind no setIterval ( )</h2>
+            <p>Siga os botões abaixo</p>
+            <button class="btnPage" id="shootNumbers">Disparar</button>
+            <p id="resShoot"></p>
+            
+        </div>
+    </main>
+</body>
+<script src="js/bindThis.js" defer></script>
+<script src="js/bindThisIterval.js" defer></script>
+</html>

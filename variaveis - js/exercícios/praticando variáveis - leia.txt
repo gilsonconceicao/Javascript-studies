@@ -1,8 +1,0 @@
-- Pratica de variáveis com o objetivo de aprender de forma eficiente. 
-
-- No momento as praticas será no arquivo .html ciênte que o correto são os arquivos organizados  no caso,
-são eles separados. 
-
-- - Estou praticando bastante pois tenho uma certa dificuldade em aprender e tudo mais. Más vamos que vamos ;)
-
- Proxímo passo será operadores em JS. 

@@ -1,5 +1,0 @@
-Criei pastas separadas para cada condição diferente . 
-
-Os ercícios que estão sem pastas 'soltos' foram executado no Node.Exec dentro do VS Code. 
-
-Aqueles que estão nas paginas com os mesmos nomes serão executados no navegador.  
