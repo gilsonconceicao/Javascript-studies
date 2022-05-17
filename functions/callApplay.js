@@ -1,25 +1,23 @@
 // call e applay
-
-function getPreco (imposto=0, moeda='R$') {
-    return `${moeda} ${this.preco * (1 - this.desc) * (1 + imposto)}`; 
+// Apply
+function UserPerson (nome, idade) {
+    return `Olá ${nome} você tem ${idade} anos. `
 }
 
-const produto01 = {
-    nome: 'Notebook', 
-    preco: 4882, 
-    desc: 0.01, 
-    getPreco
+const p1 = UserPerson.apply(UserPerson, ['Junior', 17])
+console.log(p1)
+
+// ------------------- 
+// call
+
+function CreateCar (marca, modelo, color) {
+    return ` Marca:${marca} Modelo: ${modelo} Cor: ${color}`
 }
 
-console.log(getPreco.apply(produto01,)) 
-// para mudar os parâmetro adicione após a vírgula [3, '$']
+const carAdd = CreateCar.call(CreateCar, 'Ford', 'Mustang', 'Black'); 
 
-const produto02 = {
-    nome: 'Smartphone', 
-    preco: 2200, 
-    desc: 0.03, 
-    getPreco 
-}
+console.log(carAdd)
 
-console.log(getPreco.call(produto02, ));
-// para mudar não é necessário as [] 
+const carAdd2 = CreateCar.call(CreateCar, 'Chevrolet', 'Prisma', 'White'); 
+
+console.log(carAdd2)

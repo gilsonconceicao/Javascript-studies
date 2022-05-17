@@ -1,11 +1,10 @@
 // this e a função bind JS
 
-const person = {
-    saudacao: 'Boa noite!', 
-    falar() {
-        console.log(this.saudacao); 
+const Teste = {
+    soma: 1, 
+    testeSomaFun(num) {
+        console.log(num + this.soma)
     }
 }
 
-const getPerson = person.falar.bind(person); 
-getPerson()
+Teste.testeSomaFun(6)

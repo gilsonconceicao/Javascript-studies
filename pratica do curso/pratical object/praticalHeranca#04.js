@@ -13,7 +13,7 @@
         if (nameSchool && averageSchool) {
             console.log('NOME DA ESCOLA:', nameSchool); 
             console.log('MÉDIA DAS MATÉRIAS:',averageSchool);
-        }         
+        }       
     }
 
     CreateStudent.prototype.showStudent = function () {
