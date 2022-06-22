@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project - Blog API</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/getAllUsers.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <section id="welcome-project">
+        <article>
+            <h1>Project-fetch-url</h1>
+            <p>Projeto feito com HTML, CSS e JS. Utilizando requisições fetch para acessar api externas transformando em
+                data.json renderizando o resultado na página.
+            </p>
+            <div class="hiperlink-project">
+                <a href="#">
+                    <span class="icon-github">
+                        <i class="fa-brands fa-github"></i></span>
+                    / gilsonconceicao - project-fetch
+                </a>
+            </div>
+            <a href="#"></i></a>
+        </article>
+    </section>
+    <!-- action from serch -->
+    <section id="conteiner-search">
+        <div id="options-url-apis">
+            <h2>Rendeização de API`s</h2>
+            <p>Escolha uma opção abaixo</p>
+
+            <select id="selected-url" onchange="selectedUrls()">
+                <option value="1">Escolha...</option>
+                <option value="https://jsonplaceholder.typicode.com/users">/users</option>
+
+                <option value="https://jsonplaceholder.typicode.com/posts">/posts</option>
+
+                <option value="https://jsonplaceholder.typicode.com/comments">/comments</option>
+
+                <option value="https://jsonplaceholder.typicode.com/todos">/todos</option>
+
+            </select>
+            
+        </div>
+        <div class="search-box">
+            <input type="search" name="search" id="searchtxt">
+            <button id="btnSearch"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+
+        <div id="response-url">
+            <p  id="status" class="hide">Aguardando requisição...</p>
+        </div>
+    </section>
+</body>
+
+</html>

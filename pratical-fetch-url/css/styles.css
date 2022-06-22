@@ -1,0 +1,172 @@
+
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+ 
+.hide {
+    display: none;
+}
+
+.hiperlink-project a {
+    background-color: #a8e78b;
+    color: rgb(117, 116, 116);
+    letter-spacing: 0.8px;
+    display: flex;
+    align-items: center;
+    width: 70%;
+    padding: 4px 6px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0 ;
+}
+
+.hiperlink-project a:hover {
+    opacity: 0.9;
+}
+
+
+#testLoadingDiv {
+    background-color: rgb(214, 213, 213);
+    border-radius: 10px;
+    padding: 10px ;
+    margin: 20px 0 ;
+}
+
+
+#welcome-project {
+    background-color: #87D962;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+}
+
+#welcome-project > article {
+    max-width: 1180px;
+    margin: 30px auto;
+}
+
+#welcome-project > article h1 {
+    font-size: 3em;
+    letter-spacing: 1.4px;
+}
+
+#welcome-project > article p {
+    font-size: 20px;
+    margin-top: 20px;
+
+}
+
+.icon-github {
+    color: #224242;
+    font-size: 20px ;
+    margin: 0 10px;
+}
+
+/* action search */ 
+
+#conteiner-search {
+    background-color: #ffffff;
+    max-width: 800px;
+    padding: 20px ;
+    margin: 10px 0;
+}
+
+.search-box {
+    max-width: 800px;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.search-box input {
+    font-size: 20px;
+    width: 80%;
+    padding: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.616);
+    border-radius: 5px;
+}
+
+.search-box button {
+    background-color: #87D962;
+    cursor: pointer;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    width: 100px;
+    padding: 12px 10px;
+    margin: 5px;
+}
+
+/*.......*/
+#options-url-apis {
+    margin: 20px 10px;
+}
+
+#options-url-apis p {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+#options-url-apis select {
+    background-color: #f0ecec;
+    color: rgb(85, 85, 85);
+    padding: 6px;
+    padding-right: 20px ;
+    font-size: 18px;
+    display: block;
+    width: 50%;
+}
+
+#selected-url option {
+    height: 30px;
+    border: 1px solid #cbcbcb;
+    padding-left: 17px;
+    padding-top: 12px;
+}
+
+
+/* data api */
+
+#response-url {
+    margin: 30px 10px;
+}
+
+#box-user {
+    background-color: #d6d6d6;
+    border-radius: 4px;
+    line-height: 1.6em;
+    margin: 10px 0 ;
+    padding: 10px;
+}
+
+
+@media screen and (max-width: 768px) {
+    #conteiner-search {
+        padding: 4px;
+    }
+
+    #welcome-project {
+        padding: 10px;
+    }
+
+    #options-url-apis select {
+        width: 80%;
+    }
+
+    .search-box input {
+        width: 100%;
+    }
+
+    .search-box button {
+        display: block;
+        margin: 5px auto;
+    }
+    
+    
+}
