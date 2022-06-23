@@ -137,11 +137,12 @@
     margin: 30px 10px;
 }
 
-#box-user {
+#box-data-geting {
     background-color: #d6d6d6;
     border-radius: 4px;
     line-height: 1.6em;
     margin: 10px 0 ;
+    width: 94%;
     padding: 10px;
 }
 

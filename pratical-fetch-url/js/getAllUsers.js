@@ -1,42 +1,38 @@
+// DOM 
+const selectedOptions = document.querySelector('#selected-url');
+const conteinerResponse = document.querySelector('#response-url'); 
 const btn = document.querySelector('#btnSearch'); 
-const optionsUrl = document.querySelector('#selected-url'); 
-const responseConteiner = document.querySelector('#response-url'); 
-const statusReq = document.querySelector('#status')
-// chenge options url
 
 function selectedUrls() {
-    document.getElementById('searchtxt').value = optionsUrl.value; 
-    responseConteiner.innerHTML = ''
+    document.querySelector('#searchtxt').value = selectedOptions.value; 
+    conteinerResponse.innerHTML = ''
 }
 
-// insert name from input
-btn.addEventListener('click', (e) => {
-    e.preventDefault() 
-    const url = document.getElementById('searchtxt').value; 
-    console.log(url); 
+function consultDataUrl(e) {
+    e.preventDefault(); 
 
-    // get all users
-    async function getAllUsers() {
-        const response = await fetch(url, {
-            method: "GET"
+    const url = document.querySelector('#searchtxt').value
+
+    async function getDataUrls() {
+        const dataUrl = await fetch(url, {
+            method: 'GET'
         }); 
 
-        const dataUsers = await response.json(); 
-         
-        statusReq.classList.add('hide')
+        const getingUrl = await dataUrl.json(); 
 
-        dataUsers.map((users) => {
-            const div = document.createElement("div");
-                div.setAttribute('id', 'box-user')
+        console.log(getingUrl); 
 
-            div.innerHTML = JSON.stringify(users)
- 
-            responseConteiner.appendChild(div); 
+        getingUrl.map((dataJson) => {
+            const div = document.createElement('div');
+                div.setAttribute('id', 'box-data-geting'); 
+
+            div.innerHTML = JSON.stringify(dataJson); 
+
+            conteinerResponse.appendChild(div)
         })
-
-        console.log(dataUsers);
     }
 
-    getAllUsers(); 
+    getDataUrls(); 
+}
 
-})
+btn.addEventListener('click', consultDataUrl)
