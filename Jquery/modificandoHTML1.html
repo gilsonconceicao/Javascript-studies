@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>Modificando HTML #01</title>
+    <link rel='stylesheet' href='css/estilo.css'>
+    <script src='js/jquery.js'></script>
+</head>
+
+<body class='conteudo exercicio'>
+    <h1>Modificando HTML #01</h1>
+    <div id='conteudo1'></div>
+    <div id='conteudo2'></div>
+    <div id='conteudo3'></div>
+
+
+    <script>
+        // conteúdo 1 
+        $('#conteudo1').append('<h1>1</h1>'); 
+
+        // conteudo 2
+        const elementos = [
+            $('<li>').append('Arroz'), 
+            $('<li>').append('Feijão'), 
+            $('<li>').append('Carne')
+        ]
+
+        const list = $('<ul></ul>').append(elementos).prepend('<li>Sorverte</li>'); 
+        $('#conteudo2').append(list); 
+
+        // consteudo 3
+        const numbers = $('<h1></h1>').append('123'); 
+        $('#conteudo3').append(numbers)
+    </script>
+</body>

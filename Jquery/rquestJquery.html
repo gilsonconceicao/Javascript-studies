@@ -1,0 +1,72 @@
+<head lang="pt-br">
+    <title>Request Jquery</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            background-color: deepskyblue;
+            color: white;
+            text-align: center;
+            border-bottom: 3px solid black;
+            padding: 10px;
+        }
+
+        h1 {
+            font-size: 3em;
+        }
+
+        p {
+            font-size: 20px;
+            margin: 10px;
+        }
+
+        .box {
+            background-color: aliceblue;
+            color: black;
+            display: block;
+            padding: 20px;
+        }
+    </style>
+
+    <script src="js/jquery.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Rquest API - Jquery</h1>
+        <p>Requisições Ajax de forma simples com Jquery.</p>
+    </header>
+
+    <div class="box">
+        <p>Rquest page HTML</p>
+        <p>No blog sobre séries...</p>
+
+        <button id="getapi">Obter dados</button>
+        <button id="btn" style="display: none;">Ocultar</button> 
+        
+    </div>
+    <h3 class="status">
+        </h2>
+        <div id="conteudo"></div>
+        <script>
+
+            //Jquery
+            $(document).ready(function() {
+                $('#getapi').click(function() {
+                    $('#conteudo').load('series.html', 
+                    function(responseText, textStatus, xhtp) {
+                        if (textStatus == 'success') {
+                            alert('Obtido com sucesso!'); 
+                        } 
+                        if (textStatus == 'error') {
+                            $('.status').text('Tente mais tarde...'); 
+                        }
+                    })
+                })
+            })
+        </script>
+</body>
